@@ -206,9 +206,3 @@ Bu proje özel bir projedir.
 3. Commit edin (`git commit -m 'Add some AmazingFeature'`)
 4. Push edin (`git push origin feature/AmazingFeature`)
 5. Pull Request açın
-
-## 📧 İletişim
-
-Proje Sahibi - [@yourhandle](https://twitter.com/yourhandle)
-
-Proje Linki: [https://github.com/yourusername/ReportProject](https://github.com/yourusername/ReportProject)
