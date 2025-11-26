@@ -53,12 +53,12 @@ export default function ByStockCategory() {
       </Card>
 
       <Row gutter={16} style={{ marginBottom: 16 }}>
-        <Col span={12}>
+        <Col xs={24} md={12}>
           <Card title="Kategori Dağılımı">
             <PieChart data={chartData} />
           </Card>
         </Col>
-        <Col span={12}>
+        <Col xs={24} md={12}>
           <Card>
             <Table
               columns={columns}

@@ -135,25 +135,25 @@ export default function StockDashboard() {
             KRİTİK STOK
           </Title>
           <Row gutter={[16, 16]}>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Bugün
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Son 1 Hafta
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Son 1 Ay
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Bu Yıl
               </Text>
@@ -168,25 +168,25 @@ export default function StockDashboard() {
             EN ÇOK SATAN ÜRÜNLER
           </Title>
           <Row gutter={[16, 16]}>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Bugün
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Son 1 Hafta
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Son 1 Ay
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Bu Yıl
               </Text>
@@ -201,25 +201,25 @@ export default function StockDashboard() {
             HAREKET GÖRMEYEN ÜRÜNLER
           </Title>
           <Row gutter={[16, 16]}>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Son 3 Ay
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Son 6 Ay
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Son 6 Ay
               </Text>
               <BarChart data={criticalStockData} />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text strong style={{ fontSize: 11 }}>
                 Bu Yıl
               </Text>

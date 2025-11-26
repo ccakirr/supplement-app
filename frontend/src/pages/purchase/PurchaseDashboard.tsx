@@ -102,7 +102,7 @@ export default function PurchaseDashboard() {
         }
       >
         <Row gutter={[16, 16]} style={{ marginBottom: 30 }}>
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card>
               <div style={{ textAlign: "center" }}>
                 <Text type="secondary" style={{ fontSize: 12 }}>
@@ -127,7 +127,7 @@ export default function PurchaseDashboard() {
               </div>
             </Card>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card>
               <div style={{ textAlign: "center" }}>
                 <Text type="secondary" style={{ fontSize: 12 }}>
@@ -152,7 +152,7 @@ export default function PurchaseDashboard() {
               </div>
             </Card>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card>
               <div style={{ textAlign: "center" }}>
                 <Text type="secondary" style={{ fontSize: 12 }}>
@@ -177,7 +177,7 @@ export default function PurchaseDashboard() {
               </div>
             </Card>
           </Col>
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card>
               <div style={{ textAlign: "center" }}>
                 <Text type="secondary" style={{ fontSize: 12 }}>
@@ -213,25 +213,25 @@ export default function PurchaseDashboard() {
 
         <div style={{ marginTop: 30 }}>
           <Row gutter={[16, 16]}>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Title level={5} style={{ fontSize: 13 }}>
                 Tedarikçi Bazlı
               </Title>
               {supplierData.length > 0 && <BarChart data={supplierData} />}
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Title level={5} style={{ fontSize: 13 }}>
                 Marka Bazlı
               </Title>
               {brandData.length > 0 && <BarChart data={brandData} />}
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Title level={5} style={{ fontSize: 13 }}>
                 Kategori Bazlı
               </Title>
               {categoryData.length > 0 && <BarChart data={categoryData} />}
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Title level={5} style={{ fontSize: 13 }}>
                 Kategori Bazlı
               </Title>

@@ -25,7 +25,7 @@ export default function StockReports() {
       </Card>
 
       <Row gutter={16} style={{ marginBottom: 16 }}>
-        <Col span={6}>
+        <Col xs={24} sm={12} md={6}>
           <Card>
             <Statistic
               title="Toplam Giriş"
@@ -34,7 +34,7 @@ export default function StockReports() {
             />
           </Card>
         </Col>
-        <Col span={6}>
+        <Col xs={24} sm={12} md={6}>
           <Card>
             <Statistic
               title="Toplam Çıkış"
@@ -43,12 +43,12 @@ export default function StockReports() {
             />
           </Card>
         </Col>
-        <Col span={6}>
+        <Col xs={24} sm={12} md={6}>
           <Card>
             <Statistic title="Net Değişim" value={0} />
           </Card>
         </Col>
-        <Col span={6}>
+        <Col xs={24} sm={12} md={6}>
           <Card>
             <Statistic title="Toplam Ürün" value={0} />
           </Card>

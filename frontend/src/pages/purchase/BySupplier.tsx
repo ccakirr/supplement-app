@@ -88,13 +88,13 @@ export default function BySupplier() {
         }
       >
         <Row gutter={[16, 16]} style={{ marginBottom: 30 }}>
-          <Col span={12}>
+          <Col xs={24} md={12}>
             <Title level={5} style={{ fontSize: 13 }}>
               Tedarikçi Bazlı Alış Dağılımı
             </Title>
             {supplierData.length > 0 && <PieChart data={supplierData} />}
           </Col>
-          <Col span={12}>
+          <Col xs={24} md={12}>
             <Title level={5} style={{ fontSize: 13 }}>
               Tüm Tedarikçilerin Alış Grafiği
             </Title>

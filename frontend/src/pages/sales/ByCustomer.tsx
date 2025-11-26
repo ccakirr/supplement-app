@@ -85,13 +85,13 @@ export default function ByCustomer() {
         }
       >
         <Row gutter={[16, 16]} style={{ marginBottom: 30 }}>
-          <Col span={12}>
+          <Col xs={24} md={12}>
             <Title level={5} style={{ fontSize: 13 }}>
               Müşteri Bazlı Satış Dağılımı
             </Title>
             {customerData.length > 0 && <PieChart data={customerData} />}
           </Col>
-          <Col span={12}>
+          <Col xs={24} md={12}>
             <Title level={5} style={{ fontSize: 13 }}>
               Tüm Müşterilerin Satış Grafiği
             </Title>

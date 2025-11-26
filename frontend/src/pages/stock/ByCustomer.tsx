@@ -70,12 +70,12 @@ export default function ByCustomer() {
       </Card>
 
       <Row gutter={16} style={{ marginBottom: 16 }}>
-        <Col span={8}>
+        <Col xs={24} sm={12} md={8}>
           <Card>
             <Statistic title="Toplam Müşteri" value={stats.totalCustomers} />
           </Card>
         </Col>
-        <Col span={8}>
+        <Col xs={24} sm={12} md={8}>
           <Card>
             <Statistic
               title="Toplam Satış"
@@ -84,7 +84,7 @@ export default function ByCustomer() {
             />
           </Card>
         </Col>
-        <Col span={8}>
+        <Col xs={24} sm={12} md={8}>
           <Card>
             <Statistic
               title="Ortalama Sipariş"
@@ -96,12 +96,12 @@ export default function ByCustomer() {
       </Row>
 
       <Row gutter={16} style={{ marginBottom: 16 }}>
-        <Col span={12}>
+        <Col xs={24} md={12}>
           <Card title="Top 10 Müşteri">
             <PieChart data={chartData} />
           </Card>
         </Col>
-        <Col span={12}>
+        <Col xs={24} md={12}>
           <Card>
             <Table
               columns={columns}

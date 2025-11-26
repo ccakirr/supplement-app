@@ -93,13 +93,13 @@ export default function ByBrand() {
         }
       >
         <Row gutter={[16, 16]} style={{ marginBottom: 30 }}>
-          <Col span={12}>
+          <Col xs={24} md={12}>
             <Title level={5} style={{ fontSize: 13 }}>
               Marka Bazlı Satış Dağılımı
             </Title>
             {brandData.length > 0 && <PieChart data={brandData} />}
           </Col>
-          <Col span={12}>
+          <Col xs={24} md={12}>
             <Title level={5} style={{ fontSize: 13 }}>
               Tüm Markaların Satış Grafiği
             </Title>

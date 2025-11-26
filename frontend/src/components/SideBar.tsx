@@ -9,6 +9,24 @@ export default function SideBar() {
   const navigate = useNavigate();
   const location = useLocation();
 
+  // Auto-collapse on mobile
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useState(() => {
+    const handleResize = () => {
+      const mobile = window.innerWidth < 768;
+      setIsMobile(mobile);
+      if (mobile) {
+        setCollapsed(true);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  });
+
   const menuItems = [
     {
       key: "/",
@@ -71,9 +89,18 @@ export default function SideBar() {
       collapsed={collapsed}
       onCollapse={(value) => setCollapsed(value)}
       width={230}
+      breakpoint="md"
+      collapsedWidth={isMobile ? 0 : 80}
       style={{
         background: "#fff",
         borderRight: "1px solid #ddd",
+        overflow: "auto",
+        height: "100vh",
+        position: isMobile ? "fixed" : "relative",
+        left: 0,
+        top: 0,
+        bottom: 0,
+        zIndex: 999,
       }}
     >
       <div

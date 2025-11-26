@@ -49,7 +49,7 @@ export default function Home() {
   }
 
   return (
-    <div>
+    <div style={{ padding: "0 16px" }}>
       <Card
         title={
           <div>
@@ -59,7 +59,7 @@ export default function Home() {
           </div>
         }
         extra={
-          <Space>
+          <Space wrap size="small">
             <Button size="small">☐ Liste</Button>
             <Button size="small">Excel</Button>
             <Button size="small">PDF</Button>
@@ -69,7 +69,7 @@ export default function Home() {
       >
         {/* Satış Kartları */}
         <Row gutter={[16, 16]} style={{ marginBottom: 30 }}>
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#f6ffed", border: "1px solid #b7eb8f" }}
             >
@@ -97,7 +97,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#f6ffed", border: "1px solid #b7eb8f" }}
             >
@@ -125,7 +125,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#f6ffed", border: "1px solid #b7eb8f" }}
             >
@@ -153,7 +153,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#fff1f0", border: "1px solid #ffccc7" }}
             >
@@ -184,7 +184,7 @@ export default function Home() {
 
         {/* Alış Kartları */}
         <Row gutter={[16, 16]} style={{ marginBottom: 30 }}>
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#fff1f0", border: "1px solid #ffccc7" }}
             >
@@ -212,7 +212,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#fff1f0", border: "1px solid #ffccc7" }}
             >
@@ -240,7 +240,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#f6ffed", border: "1px solid #b7eb8f" }}
             >
@@ -268,7 +268,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#f6ffed", border: "1px solid #b7eb8f" }}
             >
@@ -299,7 +299,7 @@ export default function Home() {
 
         {/* Stok Kartları */}
         <Row gutter={[16, 16]} style={{ marginBottom: 30 }}>
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#e6f7ff", border: "1px solid #91d5ff" }}
             >
@@ -327,7 +327,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#e6f7ff", border: "1px solid #91d5ff" }}
             >
@@ -355,7 +355,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#e6f7ff", border: "1px solid #91d5ff" }}
             >
@@ -383,7 +383,7 @@ export default function Home() {
             </Card>
           </Col>
 
-          <Col span={6}>
+          <Col xs={24} sm={12} md={6}>
             <Card
               style={{ background: "#e6f7ff", border: "1px solid #91d5ff" }}
             >
@@ -418,7 +418,7 @@ export default function Home() {
             EN ÇOK SATAN ÜRÜNLER / TL
           </Text>
           <Row gutter={[16, 16]} style={{ marginTop: 15 }}>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text style={{ fontSize: 11 }}>Bugün</Text>
               <BarChart
                 data={topProducts.map((p) => ({
@@ -427,7 +427,7 @@ export default function Home() {
                 }))}
               />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text style={{ fontSize: 11 }}>Son 1 Hafta</Text>
               <BarChart
                 data={topProducts.map((p) => ({
@@ -436,7 +436,7 @@ export default function Home() {
                 }))}
               />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text style={{ fontSize: 11 }}>Son 1 Ay</Text>
               <BarChart
                 data={topProducts.map((p) => ({
@@ -445,7 +445,7 @@ export default function Home() {
                 }))}
               />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text style={{ fontSize: 11 }}>Bu Yıl</Text>
               <BarChart
                 data={topProducts.map((p) => ({
@@ -463,7 +463,7 @@ export default function Home() {
             EN ÇOK SATAN ÜRÜNLER / Adet
           </Text>
           <Row gutter={[16, 16]} style={{ marginTop: 15 }}>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text style={{ fontSize: 11 }}>Bugün</Text>
               <BarChart
                 data={topProducts.map((p) => ({
@@ -472,7 +472,7 @@ export default function Home() {
                 }))}
               />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text style={{ fontSize: 11 }}>Son 1 Hafta</Text>
               <BarChart
                 data={topProducts.map((p) => ({
@@ -481,7 +481,7 @@ export default function Home() {
                 }))}
               />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text style={{ fontSize: 11 }}>Son 1 Ay</Text>
               <BarChart
                 data={topProducts.map((p) => ({
@@ -490,7 +490,7 @@ export default function Home() {
                 }))}
               />
             </Col>
-            <Col span={6}>
+            <Col xs={24} sm={12} md={6}>
               <Text style={{ fontSize: 11 }}>Bu Yıl</Text>
               <BarChart
                 data={topProducts.map((p) => ({
