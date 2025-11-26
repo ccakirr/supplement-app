@@ -1,18 +1,24 @@
-import { Layout, Menu } from "antd";
+import { Layout, Menu, Drawer } from "antd";
 import { useNavigate, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const { Sider } = Layout;
 
-export default function SideBar() {
+interface SideBarProps {
+  mobileOpen?: boolean;
+  onMobileClose?: () => void;
+}
+
+export default function SideBar({
+  mobileOpen = false,
+  onMobileClose,
+}: SideBarProps) {
   const [collapsed, setCollapsed] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
-
-  // Auto-collapse on mobile
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
 
-  useState(() => {
+  useEffect(() => {
     const handleResize = () => {
       const mobile = window.innerWidth < 768;
       setIsMobile(mobile);
@@ -25,7 +31,7 @@ export default function SideBar() {
     handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
-  });
+  }, []);
 
   const menuItems = [
     {
@@ -83,26 +89,17 @@ export default function SideBar() {
     },
   ];
 
-  return (
-    <Sider
-      collapsible
-      collapsed={collapsed}
-      onCollapse={(value) => setCollapsed(value)}
-      width={230}
-      breakpoint="md"
-      collapsedWidth={isMobile ? 0 : 80}
-      style={{
-        background: "#fff",
-        borderRight: "1px solid #ddd",
-        overflow: "auto",
-        height: "100vh",
-        position: isMobile ? "fixed" : "relative",
-        left: 0,
-        top: 0,
-        bottom: 0,
-        zIndex: 999,
-      }}
-    >
+  const handleMenuClick = (key: string) => {
+    if (key.startsWith("/")) {
+      navigate(key);
+      if (isMobile && onMobileClose) {
+        onMobileClose();
+      }
+    }
+  };
+
+  const sidebarContent = (
+    <>
       <div
         style={{
           padding: "20px 15px",
@@ -137,11 +134,7 @@ export default function SideBar() {
         mode="inline"
         selectedKeys={[location.pathname]}
         style={{ border: "none", fontSize: 12 }}
-        onClick={({ key }) => {
-          if (key.startsWith("/")) {
-            navigate(key);
-          }
-        }}
+        onClick={({ key }) => handleMenuClick(key)}
         items={menuItems}
       />
 
@@ -161,6 +154,47 @@ export default function SideBar() {
           </>
         )}
       </div>
+    </>
+  );
+
+  // Mobile: Drawer
+  if (isMobile) {
+    return (
+      <Drawer
+        placement="left"
+        onClose={onMobileClose}
+        open={mobileOpen}
+        closable={false}
+        width={230}
+        styles={{ body: { padding: 0, background: "#fff" } }}
+      >
+        <div
+          style={{ height: "100vh", position: "relative", background: "#fff" }}
+        >
+          {sidebarContent}
+        </div>
+      </Drawer>
+    );
+  }
+
+  // Desktop: Sider
+  return (
+    <Sider
+      collapsible
+      collapsed={collapsed}
+      onCollapse={(value) => setCollapsed(value)}
+      width={230}
+      breakpoint="md"
+      collapsedWidth={80}
+      style={{
+        background: "#fff",
+        borderRight: "1px solid #ddd",
+        overflow: "auto",
+        height: "100vh",
+        position: "relative",
+      }}
+    >
+      {sidebarContent}
     </Sider>
   );
 }
