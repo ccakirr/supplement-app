@@ -417,42 +417,66 @@ export default function Home() {
           <Text strong style={{ fontSize: 13 }}>
             EN ÇOK SATAN ÜRÜNLER / TL
           </Text>
-          <Row gutter={[16, 16]} style={{ marginTop: 15 }}>
+          <Row gutter={[16, 24]} style={{ marginTop: 15 }}>
             <Col xs={24} sm={12} md={6}>
-              <Text style={{ fontSize: 11 }}>Bugün</Text>
-              <BarChart
-                data={topProducts.map((p) => ({
-                  name: p.label,
-                  value: p.value,
-                }))}
-              />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bugün
+                </Text>
+                <BarChart
+                  data={topProducts.map((p) => ({
+                    name: p.label,
+                    value: p.value,
+                  }))}
+                />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text style={{ fontSize: 11 }}>Son 1 Hafta</Text>
-              <BarChart
-                data={topProducts.map((p) => ({
-                  name: p.label,
-                  value: p.value,
-                }))}
-              />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 1 Hafta
+                </Text>
+                <BarChart
+                  data={topProducts.map((p) => ({
+                    name: p.label,
+                    value: p.value,
+                  }))}
+                />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text style={{ fontSize: 11 }}>Son 1 Ay</Text>
-              <BarChart
-                data={topProducts.map((p) => ({
-                  name: p.label,
-                  value: p.value,
-                }))}
-              />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 1 Ay
+                </Text>
+                <BarChart
+                  data={topProducts.map((p) => ({
+                    name: p.label,
+                    value: p.value,
+                  }))}
+                />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text style={{ fontSize: 11 }}>Bu Yıl</Text>
-              <BarChart
-                data={topProducts.map((p) => ({
-                  name: p.label,
-                  value: p.value,
-                }))}
-              />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bu Yıl
+                </Text>
+                <BarChart
+                  data={topProducts.map((p) => ({
+                    name: p.label,
+                    value: p.value,
+                  }))}
+                />
+              </div>
             </Col>
           </Row>
         </div>
@@ -462,42 +486,66 @@ export default function Home() {
           <Text strong style={{ fontSize: 13 }}>
             EN ÇOK SATAN ÜRÜNLER / Adet
           </Text>
-          <Row gutter={[16, 16]} style={{ marginTop: 15 }}>
+          <Row gutter={[16, 24]} style={{ marginTop: 15 }}>
             <Col xs={24} sm={12} md={6}>
-              <Text style={{ fontSize: 11 }}>Bugün</Text>
-              <BarChart
-                data={topProducts.map((p) => ({
-                  name: p.label,
-                  value: p.value,
-                }))}
-              />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bugün
+                </Text>
+                <BarChart
+                  data={topProducts.map((p) => ({
+                    name: p.label,
+                    value: p.value,
+                  }))}
+                />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text style={{ fontSize: 11 }}>Son 1 Hafta</Text>
-              <BarChart
-                data={topProducts.map((p) => ({
-                  name: p.label,
-                  value: p.value,
-                }))}
-              />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 1 Hafta
+                </Text>
+                <BarChart
+                  data={topProducts.map((p) => ({
+                    name: p.label,
+                    value: p.value,
+                  }))}
+                />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text style={{ fontSize: 11 }}>Son 1 Ay</Text>
-              <BarChart
-                data={topProducts.map((p) => ({
-                  name: p.label,
-                  value: p.value,
-                }))}
-              />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 1 Ay
+                </Text>
+                <BarChart
+                  data={topProducts.map((p) => ({
+                    name: p.label,
+                    value: p.value,
+                  }))}
+                />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text style={{ fontSize: 11 }}>Bu Yıl</Text>
-              <BarChart
-                data={topProducts.map((p) => ({
-                  name: p.label,
-                  value: p.value,
-                }))}
-              />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bu Yıl
+                </Text>
+                <BarChart
+                  data={topProducts.map((p) => ({
+                    name: p.label,
+                    value: p.value,
+                  }))}
+                />
+              </div>
             </Col>
           </Row>
         </div>
