@@ -93,7 +93,7 @@ export default function StockDashboard() {
         {/* Üst Özet Kartlar */}
         <Row gutter={[16, 16]} style={{ marginBottom: 30 }}>
           {stockValues.map((item, index) => (
-            <Col span={6} key={index}>
+            <Col xs={12} sm={12} md={6} key={index}>
               <div style={{ textAlign: "center" }}>
                 <Text type="secondary" style={{ fontSize: 12 }}>
                   {item.title}
@@ -116,14 +116,16 @@ export default function StockDashboard() {
           <Title level={5} style={{ fontSize: 13, marginBottom: 15 }}>
             STOK DEĞİR HIZI
           </Title>
-          <Row gutter={[16, 16]}>
+          <Row gutter={[16, 24]}>
             {stockTurnover.map((item, index) => (
-              <Col span={6} key={index}>
-                <DonutChart
-                  title={item.title}
-                  value={item.value}
-                  legend={item.label}
-                />
+              <Col xs={24} sm={12} md={6} key={index}>
+                <div style={{ marginBottom: 16 }}>
+                  <DonutChart
+                    title={item.title}
+                    value={item.value}
+                    legend={item.label}
+                  />
+                </div>
               </Col>
             ))}
           </Row>
@@ -134,30 +136,50 @@ export default function StockDashboard() {
           <Title level={5} style={{ fontSize: 13, marginBottom: 15 }}>
             KRİTİK STOK
           </Title>
-          <Row gutter={[16, 16]}>
+          <Row gutter={[16, 24]}>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Bugün
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bugün
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Son 1 Hafta
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 1 Hafta
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Son 1 Ay
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 1 Ay
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Bu Yıl
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bu Yıl
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
           </Row>
         </div>
@@ -167,30 +189,50 @@ export default function StockDashboard() {
           <Title level={5} style={{ fontSize: 13, marginBottom: 15 }}>
             EN ÇOK SATAN ÜRÜNLER
           </Title>
-          <Row gutter={[16, 16]}>
+          <Row gutter={[16, 24]}>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Bugün
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bugün
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Son 1 Hafta
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 1 Hafta
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Son 1 Ay
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 1 Ay
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Bu Yıl
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bu Yıl
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
           </Row>
         </div>
@@ -200,30 +242,50 @@ export default function StockDashboard() {
           <Title level={5} style={{ fontSize: 13, marginBottom: 15 }}>
             HAREKET GÖRMEYEN ÜRÜNLER
           </Title>
-          <Row gutter={[16, 16]}>
+          <Row gutter={[16, 24]}>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Son 3 Ay
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 3 Ay
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Son 6 Ay
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 6 Ay
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Son 6 Ay
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Son 6 Ay
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
             <Col xs={24} sm={12} md={6}>
-              <Text strong style={{ fontSize: 11 }}>
-                Bu Yıl
-              </Text>
-              <BarChart data={criticalStockData} />
+              <div style={{ marginBottom: 16 }}>
+                <Text
+                  strong
+                  style={{ fontSize: 11, display: "block", marginBottom: 8 }}
+                >
+                  Bu Yıl
+                </Text>
+                <BarChart data={criticalStockData} />
+              </div>
             </Col>
           </Row>
         </div>
