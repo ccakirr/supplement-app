@@ -118,8 +118,8 @@ export default function StockDashboard() {
           </Title>
           <Row gutter={[16, 24]}>
             {stockTurnover.map((item, index) => (
-              <Col xs={24} sm={12} md={6} key={index}>
-                <div style={{ marginBottom: 16 }}>
+              <Col xs={24} sm={24} md={12} lg={6} key={index}>
+                <div style={{ marginBottom: 24 }}>
                   <DonutChart
                     title={item.title}
                     value={item.value}
@@ -137,8 +137,8 @@ export default function StockDashboard() {
             KRİTİK STOK
           </Title>
           <Row gutter={[16, 24]}>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -148,8 +148,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -159,8 +159,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -170,8 +170,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -190,8 +190,8 @@ export default function StockDashboard() {
             EN ÇOK SATAN ÜRÜNLER
           </Title>
           <Row gutter={[16, 24]}>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -201,8 +201,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -212,8 +212,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -223,8 +223,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -243,8 +243,8 @@ export default function StockDashboard() {
             HAREKET GÖRMEYEN ÜRÜNLER
           </Title>
           <Row gutter={[16, 24]}>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -254,8 +254,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -265,8 +265,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
@@ -276,8 +276,8 @@ export default function StockDashboard() {
                 <BarChart data={criticalStockData} />
               </div>
             </Col>
-            <Col xs={24} sm={12} md={6}>
-              <div style={{ marginBottom: 16 }}>
+            <Col xs={24} sm={24} md={12} lg={6}>
+              <div style={{ marginBottom: 24 }}>
                 <Text
                   strong
                   style={{ fontSize: 11, display: "block", marginBottom: 8 }}
