@@ -114,7 +114,7 @@ export default function StockDashboard() {
         {/* Stok Devir Hızı */}
         <div style={{ marginBottom: 30 }}>
           <Title level={5} style={{ fontSize: 13, marginBottom: 15 }}>
-            STOK DEĞİR HIZI
+            STOK DEVİR HIZI
           </Title>
           <Row gutter={[16, 24]}>
             {stockTurnover.map((item, index) => (
