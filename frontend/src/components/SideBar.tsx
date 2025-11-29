@@ -107,22 +107,6 @@ export default function SideBar({
           gap: 10,
         }}
       >
-        <div
-          style={{
-            width: 40,
-            height: 40,
-            background: "#4CAF50",
-            borderRadius: "50%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "#fff",
-            fontWeight: "bold",
-            fontSize: 20,
-          }}
-        >
-          F
-        </div>
         {!collapsed && (
           <div style={{ fontWeight: "bold", fontSize: 16 }}>FullSupplement</div>
         )}
