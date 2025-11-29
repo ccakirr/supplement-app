@@ -24,10 +24,11 @@ bld/
 *.user
 *.sln.docstates
 
-# Database
+# Database (runtime generated)
 *.db
 *.db-shm
 *.db-wal
+report.db*
 
 # Frontend
 frontend/node_modules/
