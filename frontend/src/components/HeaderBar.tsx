@@ -24,8 +24,8 @@ export default function HeaderBar({
     return "Dashboard";
   };
 
-  // Görseldeki tarih formatı
-  const dateStr = "2 Kasım 2025 Pazar"; // Görseldeki tarih
+  const d = new Date();
+  const dateStr = d.getDate.toString(); //tarih
 
   return (
     <Header
