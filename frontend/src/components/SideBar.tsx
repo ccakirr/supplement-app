@@ -47,7 +47,6 @@ export default function SideBar({
     },
     { key: "/stock/current", label: "GÜNCEL STOKLAR" },
     { key: "/stock/skt", label: "SKT DURUMU" },
-    { key: "/stock/reports", label: "STOK RAPORLARI" },
     {
       key: "stock-report-header",
       label: "STOK RAPORU",
