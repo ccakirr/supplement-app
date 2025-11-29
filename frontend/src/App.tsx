@@ -3,7 +3,6 @@ import AppLayout from "./layout/AppLayout";
 import Home from "./pages/Home";
 import StockDashboard from "./pages/stock/StockDashboard";
 import SktReport from "./pages/stock/SktReport";
-import StockMovements from "./pages/stock/StockMovements";
 import CurrentStock from "./pages/stock/CurrentStock";
 import ByCustomer from "./pages/stock/ByCustomer";
 import ByStockCategory from "./pages/stock/ByStockCategory";
