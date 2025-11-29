@@ -27,7 +27,6 @@ export default function App() {
           {/* Stock Routes */}
           <Route path="/stock/dashboard" element={<StockDashboard />} />
           <Route path="/stock/skt" element={<SktReport />} />
-          <Route path="/stock/movements" element={<StockMovements />} />
           <Route path="/stock/current" element={<CurrentStock />} />
           <Route path="/stock/register" element={<ByCustomer />} />
           <Route path="/stock/category" element={<ByStockCategory />} />

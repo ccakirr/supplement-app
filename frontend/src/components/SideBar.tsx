@@ -45,7 +45,6 @@ export default function SideBar({
       style: { fontWeight: "bold", marginTop: 10, cursor: "default" },
       disabled: true,
     },
-    { key: "/stock/movements", label: "STOK HAREKETLERİ" },
     { key: "/stock/current", label: "GÜNCEL STOKLAR" },
     { key: "/stock/skt", label: "SKT DURUMU" },
     { key: "/stock/reports", label: "STOK RAPORLARI" },
