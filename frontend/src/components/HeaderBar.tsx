@@ -25,7 +25,7 @@ export default function HeaderBar({
   };
 
   const d = new Date();
-  const dateStr = d.getDate().toString(); //tarih
+  const dateStr = `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`; //tarih
 
   return (
     <Header
