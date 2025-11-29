@@ -79,8 +79,6 @@ export default function SideBar({
     },
     { key: "/purchase/supplier", label: "TEDARİKÇİ BAZLI" },
     { key: "/purchase/dashboard", label: "DASHBOARD" },
-    // { key: "/purchase/brand", label: "MARKA BAZLI" },
-    // { key: "/purchase/dashboard", label: "EN ÇOK SATANLAR" },
     {
       key: "comparison-header",
       label: "ALIŞ - SATIŞ RAPORU (KARŞILAŞTIRMA)",
