@@ -5,7 +5,6 @@ import StockDashboard from "./pages/stock/StockDashboard";
 import SktReport from "./pages/stock/SktReport";
 import StockMovements from "./pages/stock/StockMovements";
 import CurrentStock from "./pages/stock/CurrentStock";
-import StockReports from "./pages/stock/StockReports";
 import ByCustomer from "./pages/stock/ByCustomer";
 import ByStockCategory from "./pages/stock/ByStockCategory";
 import ByStockBrand from "./pages/stock/ByStockBrand";
@@ -30,7 +29,6 @@ export default function App() {
           <Route path="/stock/skt" element={<SktReport />} />
           <Route path="/stock/movements" element={<StockMovements />} />
           <Route path="/stock/current" element={<CurrentStock />} />
-          <Route path="/stock/reports" element={<StockReports />} />
           <Route path="/stock/register" element={<ByCustomer />} />
           <Route path="/stock/category" element={<ByStockCategory />} />
           <Route path="/stock/brand" element={<ByStockBrand />} />
