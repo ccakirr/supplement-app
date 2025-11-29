@@ -35,26 +35,6 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           showMenuButton={isMobile}
         />
 
-        <Content
-          style={{
-            padding: isMobile ? "16px 8px" : "16px",
-            background: "#f5f5f5",
-            minHeight: "calc(100vh - 64px)",
-          }}
-        >
-          {showFilters ? (
-            <Row gutter={[20, 20]}>
-              <Col xs={24} lg={18}>
-                {children}
-              </Col>
-              <Col xs={24} lg={6}>
-                <Filters />
-              </Col>
-            </Row>
-          ) : (
-            children
-          )}
-        </Content>
       </Layout>
     </Layout>
   );
