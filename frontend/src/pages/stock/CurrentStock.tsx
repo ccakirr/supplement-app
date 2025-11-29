@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import API_BASE_URL from "../../config/api";
 
-const { Search } = Input;
-
 export default function CurrentStock() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -57,24 +55,6 @@ export default function CurrentStock() {
   return (
     <div style={{ padding: 24 }}>
       <h2>Güncel Stoklar</h2>
-
-      <Card style={{ marginBottom: 16 }}>
-        <Space wrap>
-          <Search placeholder="Ürün ara..." style={{ width: 300 }} />
-          <Select placeholder="Kategori" style={{ width: 150 }}>
-            <Select.Option value="all">Tümü</Select.Option>
-          </Select>
-          <Select placeholder="Marka" style={{ width: 150 }}>
-            <Select.Option value="all">Tümü</Select.Option>
-          </Select>
-          <Select placeholder="Stok Durumu" style={{ width: 150 }}>
-            <Select.Option value="all">Tümü</Select.Option>
-            <Select.Option value="low">Düşük Stok</Select.Option>
-            <Select.Option value="normal">Normal</Select.Option>
-          </Select>
-        </Space>
-      </Card>
-
       <Card>
         <Table
           columns={columns}
