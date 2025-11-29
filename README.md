@@ -75,40 +75,6 @@ docker build -t supplement-app .
 # Container'ı çalıştırın
 docker run -p 8080:8080 -v $(pwd)/data:/app/data supplement-app
 ```
-
-## 🚂 Railway Deployment
-
-### Adım 1: Railway Hesabı Oluşturun
-
-1. [Railway.app](https://railway.app) adresine gidin
-2. GitHub hesabınızla giriş yapın
-
-### Adım 2: Yeni Proje Oluşturun
-
-1. "New Project" butonuna tıklayın
-2. "Deploy from GitHub repo" seçeneğini seçin
-3. Repository'nizi seçin
-
-### Adım 3: Environment Variables (Opsiyonel)
-
-Railway otomatik olarak PORT değişkenini ayarlayacaktır. İsteğe bağlı olarak:
-
-```
-DB_PATH=/app/data/report.db
-ASPNETCORE_ENVIRONMENT=Production
-```
-
-### Adım 4: Deploy
-
-Railway otomatik olarak Dockerfile'ı algılayacak ve deploy edecektir.
-
-### Adım 5: Volume Ekleme (Veritabanı Kalıcılığı)
-
-1. Railway dashboard'da projenize gidin
-2. "Variables" sekmesine tıklayın
-3. "Add Volume" butonuna tıklayın
-4. Mount path: `/app/data`
-
 ## 📁 Proje Yapısı
 
 ```
