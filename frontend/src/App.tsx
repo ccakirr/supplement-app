@@ -46,8 +46,8 @@ export default function App() {
           {/* Purchase Routes */}
           <Route path="/purchase/dashboard" element={<PurchaseDashboard />} />
           <Route path="/purchase/supplier" element={<BySupplier />} />
-          <Route path="/purchase/category" element={<PurchaseDashboard />} />
-          <Route path="/purchase/brand" element={<PurchaseDashboard />} />
+          {/* <Route path="/purchase/dashboard" element={<PurchaseDashboard />} />
+          <Route path="/purchase/brand" element={<PurchaseDashboard />} /> */}
         </Routes>
       </AppLayout>
     </BrowserRouter>
