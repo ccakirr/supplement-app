@@ -3,6 +3,8 @@ import SideBar from "../components/SideBar";
 import HeaderBar from "../components/HeaderBar";
 import { useState, useEffect } from "react";
 
+const { Content } = Layout;
+
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
@@ -28,6 +30,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
           onMenuClick={() => setMobileMenuOpen(true)}
           showMenuButton={isMobile}
         />
+        <Content style={{ padding: "24px" }}>{children}</Content>
       </Layout>
     </Layout>
   );
